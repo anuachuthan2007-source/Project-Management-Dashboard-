@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Team - ProjectHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>ProjectHub</h2>
+
+        <nav>
+            <a href="index.html">📊 Dashboard</a>
+            <a href="projects.html">📁 Projects</a>
+            <a href="tasks.html">📋 Tasks</a>
+            <a href="team.html" class="active">👥 Team</a>
+            <a href="analytics.html">📈 Analytics</a>
+            <a href="settings.html">⚙️ Settings</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html">🚪 Logout</a>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Team Management</h1>
+
+                <p>
+                    Manage your team members and their roles.
+                </p>
+
+            </div>
+
+            <div class="top-actions">
+
+                <button id="themeBtn">
+                    🌙 Dark Mode
+                </button>
+
+                <div class="profile">
+                    👤 Admin
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Team Statistics -->
+
+        <section class="stats">
+
+            <div class="card">
+
+                <h3>Total Members</h3>
+
+                <p class="number">
+                    16
+                </p>
+
+                <span>
+                    Team members
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Developers</h3>
+
+                <p class="number">
+                    8
+                </p>
+
+                <span>
+                    Development team
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Designers</h3>
+
+                <p class="number">
+                    4
+                </p>
+
+                <span>
+                    Design team
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Managers</h3>
+
+                <p class="number">
+                    4
+                </p>
+
+                <span>
+                    Management team
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Team Members -->
+
+        <section class="team-section">
+
+            <div class="section-header">
+
+                <h2>Team Members</h2>
+
+                <button class="add-member-btn" id="addMemberBtn">
+                    + Add Member
+                </button>
+
+            </div>
+
+
+            <div class="team-table">
+
+
+                <!-- Header -->
+
+                <div class="team-header">
+
+                    <span>Member</span>
+                    <span>Role</span>
+                    <span>Email</span>
+                    <span>Status</span>
+
+                </div>
+
+
+                <!-- Member 1 -->
+
+                <div class="team-row">
+
+                    <span>
+                        👩‍💻 Priya
+                    </span>
+
+                    <span>
+                        Frontend Developer
+                    </span>
+
+                    <span>
+                        priya@example.com
+                    </span>
+
+                    <span class="member-status active-status">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <!-- Member 2 -->
+
+                <div class="team-row">
+
+                    <span>
+                        👨‍💻 Arun
+                    </span>
+
+                    <span>
+                        Backend Developer
+                    </span>
+
+                    <span>
+                        arun@example.com
+                    </span>
+
+                    <span class="member-status active-status">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <!-- Member 3 -->
+
+                <div class="team-row">
+
+                    <span>
+                        👩‍🎨 Divya
+                    </span>
+
+                    <span>
+                        UI/UX Designer
+                    </span>
+
+                    <span>
+                        divya@example.com
+                    </span>
+
+                    <span class="member-status active-status">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <!-- Member 4 -->
+
+                <div class="team-row">
+
+                    <span>
+                        👨‍💼 Karthik
+                    </span>
+
+                    <span>
+                        Project Manager
+                    </span>
+
+                    <span>
+                        karthik@example.com
+                    </span>
+
+                    <span class="member-status away-status">
+                        Away
+                    </span>
+
+                </div>
+
+
+                <!-- Member 5 -->
+
+                <div class="team-row">
+
+                    <span>
+                        👩‍💻 Meena
+                    </span>
+
+                    <span>
+                        Full Stack Developer
+                    </span>
+
+                    <span>
+                        meena@example.com
+                    </span>
+
+                    <span class="member-status active-status">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <!-- Member 6 -->
+
+                <div class="team-row">
+
+                    <span>
+                        👨‍🎨 Rahul
+                    </span>
+
+                    <span>
+                        UI Designer
+                    </span>
+
+                    <span>
+                        rahul@example.com
+                    </span>
+
+                    <span class="member-status active-status">
+                        Active
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Team Roles -->
+
+        <section class="task-section">
+
+            <div class="section-header">
+
+                <h2>Team Roles</h2>
+
+            </div>
+
+
+            <div class="task-board">
+
+
+                <div class="task-column">
+
+                    <h3>👨‍💻 Developers</h3>
+
+                    <div class="task-card">
+
+                        <h4>8 Members</h4>
+
+                        <p>
+                            Frontend, backend and full-stack
+                            development team.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="task-column">
+
+                    <h3>🎨 Designers</h3>
+
+                    <div class="task-card">
+
+                        <h4>4 Members</h4>
+
+                        <p>
+                            UI/UX and product design team.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="task-column">
+
+                    <h3>👔 Managers</h3>
+
+                    <div class="task-card">
+
+                        <h4>4 Members</h4>
+
+                        <p>
+                            Project managers and team leads.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
