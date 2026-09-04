@@ -1,0 +1,524 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Management Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2>ProjectHub</h2>
+
+        <nav>
+    <a href="index.html" class="active">📊 Dashboard</a>
+    <a href="projects.html">📁 Projects</a>
+    <a href="tasks.html">📋 Tasks</a>
+    <a href="team.html">👥 Team</a>
+    <a href="analytics.html">📈 Analytics</a>
+    <a href="settings.html">⚙️ Settings</a>
+</nav>
+
+        <div class="sidebar-bottom">
+            <a href="#">🚪 Logout</a>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <div>
+                <h1>Project Management Dashboard</h1>
+
+                <p>
+                    Welcome back! Here's what's happening with your projects.
+                </p>
+            </div>
+
+            <div class="top-actions">
+
+                <button id="themeBtn">
+                    🌙 Dark Mode
+                </button>
+
+                <div class="profile">
+                    👤 Admin
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Statistics Cards -->
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Projects</h3>
+                <p class="number">12</p>
+                <span>+2 this month</span>
+            </div>
+
+            <div class="card">
+                <h3>Active Tasks</h3>
+                <p class="number">24</p>
+                <span>8 due this week</span>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <p class="number">48</p>
+                <span>+12 this month</span>
+            </div>
+
+            <div class="card">
+                <h3>Team Members</h3>
+                <p class="number">16</p>
+                <span>4 new members</span>
+            </div>
+
+        </section>
+
+
+        <!-- Recent Projects -->
+        <section class="projects-section">
+
+            <div class="section-header">
+
+                <h2>Recent Projects</h2>
+
+                <button class="add-btn">
+                    + Add Project
+                </button>
+
+            </div>
+
+
+            <div class="project-table">
+
+                <div class="table-header">
+                    <span>Project</span>
+                    <span>Team</span>
+                    <span>Progress</span>
+                    <span>Status</span>
+                </div>
+
+
+                <div class="table-row">
+                    <span>Website Redesign</span>
+                    <span>👩‍💻 👨‍💻 👨‍💼</span>
+                    <span>75%</span>
+                    <span class="status progress">
+                        In Progress
+                    </span>
+                </div>
+
+
+                <div class="table-row">
+                    <span>Mobile App</span>
+                    <span>👨‍💻 👩‍💻</span>
+                    <span>50%</span>
+                    <span class="status progress">
+                        In Progress
+                    </span>
+                </div>
+
+
+                <div class="table-row">
+                    <span>Marketing Campaign</span>
+                    <span>👩‍💼 👨‍💼</span>
+                    <span>100%</span>
+                    <span class="status completed">
+                        Completed
+                    </span>
+                </div>
+
+
+                <div class="table-row">
+                    <span>CRM Development</span>
+                    <span>👨‍💻 👨‍💻 👩‍💻</span>
+                    <span>30%</span>
+                    <span class="status pending">
+                        Pending
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Task Board -->
+        <section class="task-section">
+
+            <div class="section-header">
+                <h2>Task Board</h2>
+            </div>
+
+
+            <div class="task-board">
+
+
+                <!-- To Do -->
+                <div class="task-column">
+
+                    <h3>To Do</h3>
+
+                    <div class="task-card">
+
+                        <h4>Design Homepage</h4>
+
+                        <p>
+                            Complete homepage UI design
+                        </p>
+
+                        <small>
+                            📅 Aug 10
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>Database Setup</h4>
+
+                        <p>
+                            Configure project database
+                        </p>
+
+                        <small>
+                            📅 Aug 12
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- In Progress -->
+                <div class="task-column">
+
+                    <h3>In Progress</h3>
+
+                    <div class="task-card">
+
+                        <h4>Frontend Development</h4>
+
+                        <p>
+                            Build responsive dashboard
+                        </p>
+
+                        <small>
+                            📅 Aug 8
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>API Integration</h4>
+
+                        <p>
+                            Connect frontend with API
+                        </p>
+
+                        <small>
+                            📅 Aug 9
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Completed -->
+                <div class="task-column">
+
+                    <h3>Completed</h3>
+
+                    <div class="task-card">
+
+                        <h4>Project Planning</h4>
+
+                        <p>
+                            Initial project requirements
+                        </p>
+
+                        <small>
+                            ✅ Completed
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>Wireframe Design</h4>
+
+                        <p>
+                            Created dashboard wireframes
+                        </p>
+
+                        <small>
+                            ✅ Completed
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+                    <!-- Charts & Analytics -->
+        <section class="analytics-section">
+
+            <div class="section-header">
+                <h2>Charts & Analytics</h2>
+            </div>
+
+            <div class="charts-container">
+
+                <!-- Project Progress Chart -->
+                <div class="chart-card">
+
+                    <h3>Project Progress</h3>
+
+                    <div class="bar-chart">
+
+                        <div class="bar-item">
+                            <span>Website</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 75%;">
+                                    75%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bar-item">
+                            <span>Mobile App</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 50%;">
+                                    50%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bar-item">
+                            <span>Marketing</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 100%;">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bar-item">
+                            <span>CRM</span>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 30%;">
+                                    30%
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Task Statistics -->
+                <div class="chart-card">
+
+                    <h3>Task Statistics</h3>
+
+                    <div class="task-stats">
+
+                        <div class="stat-circle">
+                            <strong>24</strong>
+                            <span>Active</span>
+                        </div>
+
+                        <div class="stat-circle">
+                            <strong>48</strong>
+                            <span>Completed</span>
+                        </div>
+
+                        <div class="stat-circle">
+                            <strong>8</strong>
+                            <span>Pending</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        </section>
+<!-- Team Management -->
+<section class="team-section">
+
+    <div class="section-header">
+        <h2>Team Management</h2>
+
+       <button class="add-member-btn" id="addMemberBtn">
+    + Add Member
+</button>
+    </div>
+
+    <div class="team-table">
+
+        <div class="team-header">
+            <span>Member</span>
+            <span>Role</span>
+            <span>Email</span>
+            <span>Status</span>
+        </div>
+
+        <div class="team-row">
+            <span>👩‍💻 Priya</span>
+            <span>Frontend Developer</span>
+            <span>priya@example.com</span>
+            <span class="member-status active-status">
+                Active
+            </span>
+        </div>
+
+        <div class="team-row">
+            <span>👨‍💻 Arun</span>
+            <span>Backend Developer</span>
+            <span>arun@example.com</span>
+            <span class="member-status active-status">
+                Active
+            </span>
+        </div>
+
+        <div class="team-row">
+            <span>👩‍🎨 Suba</span>
+            <span>UI/UX Designer</span>
+            <span>suba@example.com</span>
+            <span class="member-status active-status">
+                Active
+            </span>
+        </div>
+
+        <div class="team-row">
+            <span>👨‍💼 nithis</span>
+            <span>Project Manager</span>
+            <span>nithis@example.com</span>
+            <span class="member-status away-status">
+                Away
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Notifications & Deadlines -->
+
+<section class="bottom-section">
+
+    <!-- Notifications -->
+    <div class="info-card">
+
+        <div class="info-header">
+            <h2>Notifications</h2>
+            <span class="notification-count">3</span>
+        </div>
+
+        <div class="notification">
+            <span class="notification-icon">🔔</span>
+
+            <div>
+                <h4>New task assigned</h4>
+                <p>Frontend Dashboard task assigned to you.</p>
+                <small>10 minutes ago</small>
+            </div>
+        </div>
+
+        <div class="notification">
+            <span class="notification-icon">💬</span>
+
+            <div>
+                <h4>New team message</h4>
+                <p>Arun sent a message in ProjectHub.</p>
+                <small>1 hour ago</small>
+            </div>
+        </div>
+
+        <div class="notification">
+            <span class="notification-icon">✅</span>
+
+            <div>
+                <h4>Task completed</h4>
+                <p>Website redesign task was completed.</p>
+                <small>2 hours ago</small>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Upcoming Deadlines -->
+    <div class="info-card">
+
+        <div class="info-header">
+            <h2>Upcoming Deadlines</h2>
+        </div>
+
+        <div class="deadline">
+            <div>
+                <h4>Homepage Design</h4>
+                <p>Website Redesign</p>
+            </div>
+
+            <span>Aug 10</span>
+        </div>
+
+        <div class="deadline">
+            <div>
+                <h4>API Integration</h4>
+                <p>Mobile App</p>
+            </div>
+
+            <span>Aug 12</span>
+        </div>
+
+        <div class="deadline">
+            <div>
+                <h4>Testing</h4>
+                <p>CRM Development</p>
+            </div>
+
+            <span>Aug 15</span>
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
