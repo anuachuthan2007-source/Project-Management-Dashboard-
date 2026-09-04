@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings - ProjectHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>ProjectHub</h2>
+
+        <nav>
+            <a href="index.html">📊 Dashboard</a>
+            <a href="projects.html">📁 Projects</a>
+            <a href="tasks.html">📋 Tasks</a>
+            <a href="team.html">👥 Team</a>
+            <a href="analytics.html">📈 Analytics</a>
+            <a href="settings.html" class="active">⚙️ Settings</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html">🚪 Logout</a>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Settings</h1>
+
+                <p>
+                    Manage your account and dashboard preferences.
+                </p>
+
+            </div>
+
+            <div class="top-actions">
+
+                <button id="themeBtn">
+                    🌙 Dark Mode
+                </button>
+
+                <div class="profile">
+                    👤 Admin
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Profile Settings -->
+
+        <section class="settings-section">
+
+            <div class="settings-card">
+
+                <h2>👤 Profile Settings</h2>
+
+                <p class="settings-description">
+                    Update your personal information.
+                </p>
+
+                <div class="form-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        value="Admin User"
+                        id="userName"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        value="admin@example.com"
+                        id="userEmail"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Role</label>
+
+                    <input
+                        type="text"
+                        value="Project Manager"
+                        disabled
+                    >
+
+                </div>
+
+               <button class="save-btn" id="saveProfileBtn">
+    Save Changes
+</button>
+            </div>
+
+
+            <!-- Notification Settings -->
+
+            <div class="settings-card">
+
+                <h2>🔔 Notifications</h2>
+
+                <p class="settings-description">
+                    Manage your notification preferences.
+                </p>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h4>Email Notifications</h4>
+
+                        <p>
+                            Receive project updates through email.
+                        </p>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h4>Task Reminders</h4>
+
+                        <p>
+                            Get reminders about upcoming deadlines.
+                        </p>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h4>Team Messages</h4>
+
+                        <p>
+                            Receive notifications for new messages.
+                        </p>
+
+                    </div>
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Appearance -->
+
+            <div class="settings-card">
+
+                <h2>🎨 Appearance</h2>
+
+                <p class="settings-description">
+                    Customize your dashboard appearance.
+                </p>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h4>Dark Mode</h4>
+
+                        <p>
+                            Switch between light and dark theme.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="theme-settings-btn"
+                        id="settingsThemeBtn"
+                    >
+                        🌙 Toggle Theme
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Security -->
+
+            <div class="settings-card">
+
+                <h2>🔐 Security</h2>
+
+                <p class="settings-description">
+                    Manage your account security.
+                </p>
+
+
+                <div class="form-group">
+
+                    <label>Current Password</label>
+
+                    <input
+                        type="password"
+                        placeholder="Enter current password"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>New Password</label>
+
+                    <input
+                        type="password"
+                        placeholder="Enter new password"
+                    >
+
+                </div>
+
+
+                <button class="save-btn">
+                    Update Password
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
