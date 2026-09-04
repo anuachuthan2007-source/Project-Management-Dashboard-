@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tasks - ProjectHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>ProjectHub</h2>
+
+        <nav>
+            <a href="index.html">📊 Dashboard</a>
+            <a href="projects.html">📁 Projects</a>
+            <a href="tasks.html" class="active">📋 Tasks</a>
+            <a href="team.html">👥 Team</a>
+            <a href="analytics.html">📈 Analytics</a>
+            <a href="settings.html">⚙️ Settings</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html">🚪 Logout</a>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Task Management</h1>
+
+                <p>
+                    Organize and track your project tasks.
+                </p>
+
+            </div>
+
+            <div class="top-actions">
+
+                <button id="themeBtn">
+                    🌙 Dark Mode
+                </button>
+
+                <div class="profile">
+                    👤 Admin
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Task Statistics -->
+
+        <section class="stats">
+
+            <div class="card">
+
+                <h3>Total Tasks</h3>
+
+                <p class="number">
+                    80
+                </p>
+
+                <span>
+                    All tasks
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>To Do</h3>
+
+                <p class="number">
+                    18
+                </p>
+
+                <span>
+                    Tasks waiting
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>In Progress</h3>
+
+                <p class="number">
+                    24
+                </p>
+
+                <span>
+                    Currently working
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <p class="number">
+                    38
+                </p>
+
+                <span>
+                    Finished tasks
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Task Board -->
+
+        <section class="task-section">
+
+            <div class="section-header">
+
+                <h2>Task Board</h2>
+
+                <button class="add-btn" id="addTaskBtn">
+                    + Add Task
+                </button>
+
+            </div>
+
+
+            <div class="task-board">
+
+
+                <!-- TO DO -->
+
+                <div class="task-column">
+
+                    <h3>📝 To Do</h3>
+
+
+                    <div class="task-card">
+
+                        <h4>Design Homepage</h4>
+
+                        <p>
+                            Create responsive homepage UI.
+                        </p>
+
+                        <small>
+                            👤 Priya
+                        </small>
+
+                        <br>
+
+                        <small>
+                            📅 Aug 10
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>Database Setup</h4>
+
+                        <p>
+                            Configure project database.
+                        </p>
+
+                        <small>
+                            👤 Arun
+                        </small>
+
+                        <br>
+
+                        <small>
+                            📅 Aug 12
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>Content Creation</h4>
+
+                        <p>
+                            Prepare website content.
+                        </p>
+
+                        <small>
+                            👤 Divya
+                        </small>
+
+                        <br>
+
+                        <small>
+                            📅 Aug 14
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IN PROGRESS -->
+
+                <div class="task-column">
+
+                    <h3>🔄 In Progress</h3>
+
+
+                    <div class="task-card">
+
+                        <h4>Frontend Development</h4>
+
+                        <p>
+                            Build responsive dashboard.
+                        </p>
+
+                        <small>
+                            👤 Priya
+                        </small>
+
+                        <br>
+
+                        <small>
+                            📅 Aug 8
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>API Integration</h4>
+
+                        <p>
+                            Connect frontend with API.
+                        </p>
+
+                        <small>
+                            👤 Arun
+                        </small>
+
+                        <br>
+
+                        <small>
+                            📅 Aug 9
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>Mobile UI</h4>
+
+                        <p>
+                            Design mobile responsive screens.
+                        </p>
+
+                        <small>
+                            👤 Divya
+                        </small>
+
+                        <br>
+
+                        <small>
+                            📅 Aug 11
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COMPLETED -->
+
+                <div class="task-column">
+
+                    <h3>✅ Completed</h3>
+
+
+                    <div class="task-card">
+
+                        <h4>Project Planning</h4>
+
+                        <p>
+                            Completed initial requirements.
+                        </p>
+
+                        <small>
+                            👤 Karthik
+                        </small>
+
+                        <br>
+
+                        <small>
+                            ✅ Completed
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>Wireframe Design</h4>
+
+                        <p>
+                            Dashboard wireframes completed.
+                        </p>
+
+                        <small>
+                            👤 Divya
+                        </small>
+
+                        <br>
+
+                        <small>
+                            ✅ Completed
+                        </small>
+
+                    </div>
+
+
+                    <div class="task-card">
+
+                        <h4>Database Planning</h4>
+
+                        <p>
+                            Database structure completed.
+                        </p>
+
+                        <small>
+                            👤 Arun
+                        </small>
+
+                        <br>
+
+                        <small>
+                            ✅ Completed
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Upcoming Tasks -->
+
+        <section class="projects-section">
+
+            <div class="section-header">
+
+                <h2>Upcoming Tasks</h2>
+
+            </div>
+
+
+            <div class="project-table">
+
+                <div class="table-header">
+
+                    <span>Task</span>
+                    <span>Assigned To</span>
+                    <span>Deadline</span>
+                    <span>Status</span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span>
+                        Homepage Design
+                    </span>
+
+                    <span>
+                        Priya
+                    </span>
+
+                    <span>
+                        Aug 10
+                    </span>
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span>
+                        API Integration
+                    </span>
+
+                    <span>
+                        Arun
+                    </span>
+
+                    <span>
+                        Aug 12
+                    </span>
+
+                    <span class="status progress">
+                        In Progress
+                    </span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span>
+                        Mobile Testing
+                    </span>
+
+                    <span>
+                        Divya
+                    </span>
+
+                    <span>
+                        Aug 15
+                    </span>
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
